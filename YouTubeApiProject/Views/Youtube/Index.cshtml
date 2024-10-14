@@ -1,0 +1,124 @@
+﻿@model List<YouTubeApiProject.Models.YouTubeVideoModel>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - YouTubeApiProject</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/YouTubeApiProject.styles.css" asp-append-version="true" />
+
+    <style>
+        /* Styling for YouTube-like video grid */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust width as needed */
+            gap: 15px; /* Space between the video cards */
+            padding: 20px 0;
+        }
+
+        /* Styling for each video card */
+        .video-box {
+            background-color: #212121; /* Dark background like YouTube */
+            color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+
+       /* Add hover effect to each video box */
+        .video-box:hover {
+            transform: scale(1.05);
+        }
+
+       /* Ensure the thumbnail takes up most of the space */
+        .video-box img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* Minimal text below the thumbnail */
+        .video-info {
+           padding: 10px;
+        }
+
+        .video-info h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .video-info p {
+            font-size: 0.85rem;
+            margin: 0;
+            color: #aaaaaa; /* Lighter grey for description */
+        }
+
+       /* Adjust Watch button */
+        .video-info .watch-button {
+            margin-top: 10px;
+            background-color: #007bff;
+            color: white;
+            padding: 6px 12px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .video-info .watch-button:hover {
+             background-color: #0056b3;
+         }
+
+        /* Adjust "Search YouTube Videos" header */
+        h2 {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        /* Ensure the 'no videos found' message is readable */
+        p {
+            color: #FFFFFF; /* Change to white or another lighter color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Search YouTube Videos</h2>
+
+        @if (Model != null && Model.Any())
+        {
+            <div class="video-grid">
+                @foreach (var video in Model)
+                {
+                    <div class="video-box">
+                        <img src="@video.ThumbnailUrl" alt="@video.Title" />
+                        <div class="video-info">
+                            <h3>@video.Title</h3>
+                            <p>@video.Description</p>
+                            <a href="@video.VideoUrl" target="_blank">
+                                <button class="watch-button">Watch</button>
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <p>No videos found. Please try a different search.</p>
+        }
+    </div>
+
+    
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

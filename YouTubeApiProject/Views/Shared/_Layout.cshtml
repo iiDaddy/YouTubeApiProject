@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - YouTubeApiProject</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/YouTubeApiProject.styles.css" asp-append-version="true" />
+
+    <style>
+        /* Ensure global background and text color are set */
+        body {
+            background-color: #181818; /* Dark background color */
+            color: #FFFFFF; /* Light text for readability */
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #202020; /* Dark navbar background */
+        }
+
+        .navbar .nav-link, .navbar .navbar-brand {
+            color: #FFFFFF !important; /* Light text color for navbar items */
+        }
+
+        .navbar .nav-link:hover, .navbar .navbar-brand:hover {
+            color: #CCCCCC !important; /* Slightly lighter text on hover */
+        }
+
+       /* Search box styling in the navbar */
+       .navbar .form-control {
+            color: #000000; /* Dark text inside the search input field */
+       }
+
+       .navbar .btn {
+            background-color: #4CAF50; /* Green background for search button */
+            color: #FFFFFF; /* White text for button */
+       }
+
+        /* Container styling */
+        .container {
+            background-color: #181818; /* Dark background for the content area */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* YouTube-like video grid layout */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust width as needed */
+            gap: 15px;
+            padding: 20px 0;
+        }
+
+        /* Styling for each video card */
+        .video-box {
+            background-color: #282828; /* Dark card background */
+            color: #FFFFFF; /* White text */
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        /* Hover effect for video cards */
+        .video-box:hover {
+           transform: scale(1.05);
+        }
+
+        /* Thumbnail styling */
+        .video-box img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* Text inside each video card */
+        .video-info {
+            padding: 10px;
+        }
+
+        .video-info h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #E0E0E0; /* Slightly lighter gray for titles */
+        }
+
+        .video-info p {
+            font-size: 0.85rem;
+            margin: 0;
+            color: #909090; /* Light gray for descriptions */
+        }
+
+         /* Styling for Watch button */
+        .video-info .watch-button {
+            margin-top: 10px;
+            background-color: #065fd4; /* YouTube blue */
+            color: white;
+            padding: 6px 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .video-info .watch-button:hover {
+            background-color: #1e7bdd; /* Slightly brighter blue on hover */
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #202020; /* Match container background */
+            color: #909090; /* Light gray text */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Adjust the header (if any) */
+        h2 {
+            color: #FFFFFF; /* Light text */
+            padding-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search form in the navbar using GET method -->
+                    <form asp-controller="YouTube" asp-action="Search" method="get" class="d-flex">
+                        <input class="form-control me-sm-2" type="text" name="query" placeholder="Search">
+                        <button class="btn my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+           &copy; &copy; 2024 - YouTubeApiProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

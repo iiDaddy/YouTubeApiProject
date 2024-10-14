@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\balck\\source\\repos\\YouTubeApiProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C21684E0-AA4E-46CF-BFA7-ADD2AFBF98F5}|YouTubeApiProject\\YouTubeApiProject.csproj|c:\\users\\balck\\source\\repos\\youtubeapiproject\\youtubeapiproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C21684E0-AA4E-46CF-BFA7-ADD2AFBF98F5}|YouTubeApiProject\\YouTubeApiProject.csproj|solutionrelative:youtubeapiproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21684E0-AA4E-46CF-BFA7-ADD2AFBF98F5}|YouTubeApiProject\\YouTubeApiProject.csproj|c:\\users\\balck\\source\\repos\\youtubeapiproject\\youtubeapiproject\\views\\youtube\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C21684E0-AA4E-46CF-BFA7-ADD2AFBF98F5}|YouTubeApiProject\\YouTubeApiProject.csproj|solutionrelative:youtubeapiproject\\views\\youtube\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21684E0-AA4E-46CF-BFA7-ADD2AFBF98F5}|YouTubeApiProject\\YouTubeApiProject.csproj|c:\\users\\balck\\source\\repos\\youtubeapiproject\\youtubeapiproject\\models\\youtubevideomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C21684E0-AA4E-46CF-BFA7-ADD2AFBF98F5}|YouTubeApiProject\\YouTubeApiProject.csproj|solutionrelative:youtubeapiproject\\models\\youtubevideomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21684E0-AA4E-46CF-BFA7-ADD2AFBF98F5}|YouTubeApiProject\\YouTubeApiProject.csproj|c:\\users\\balck\\source\\repos\\youtubeapiproject\\youtubeapiproject\\services\\youtubeapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C21684E0-AA4E-46CF-BFA7-ADD2AFBF98F5}|YouTubeApiProject\\YouTubeApiProject.csproj|solutionrelative:youtubeapiproject\\services\\youtubeapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21684E0-AA4E-46CF-BFA7-ADD2AFBF98F5}|YouTubeApiProject\\YouTubeApiProject.csproj|c:\\users\\balck\\source\\repos\\youtubeapiproject\\youtubeapiproject\\controllers\\youtubecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C21684E0-AA4E-46CF-BFA7-ADD2AFBF98F5}|YouTubeApiProject\\YouTubeApiProject.csproj|solutionrelative:youtubeapiproject\\controllers\\youtubecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "YouTubeVideoModel.cs",
+              "DocumentMoniker": "C:\\Users\\balck\\source\\repos\\YouTubeApiProject\\YouTubeApiProject\\Models\\YouTubeVideoModel.cs",
+              "RelativeDocumentMoniker": "YouTubeApiProject\\Models\\YouTubeVideoModel.cs",
+              "ToolTip": "C:\\Users\\balck\\source\\repos\\YouTubeApiProject\\YouTubeApiProject\\Models\\YouTubeVideoModel.cs",
+              "RelativeToolTip": "YouTubeApiProject\\Models\\YouTubeVideoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T02:53:12.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "YouTubeController.cs",
+              "DocumentMoniker": "C:\\Users\\balck\\source\\repos\\YouTubeApiProject\\YouTubeApiProject\\Controllers\\YouTubeController.cs",
+              "RelativeDocumentMoniker": "YouTubeApiProject\\Controllers\\YouTubeController.cs",
+              "ToolTip": "C:\\Users\\balck\\source\\repos\\YouTubeApiProject\\YouTubeApiProject\\Controllers\\YouTubeController.cs",
+              "RelativeToolTip": "YouTubeApiProject\\Controllers\\YouTubeController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwCEAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T02:51:41.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "YouTubeApiService.cs",
+              "DocumentMoniker": "C:\\Users\\balck\\source\\repos\\YouTubeApiProject\\YouTubeApiProject\\Services\\YouTubeApiService.cs",
+              "RelativeDocumentMoniker": "YouTubeApiProject\\Services\\YouTubeApiService.cs",
+              "ToolTip": "C:\\Users\\balck\\source\\repos\\YouTubeApiProject\\YouTubeApiProject\\Services\\YouTubeApiService.cs",
+              "RelativeToolTip": "YouTubeApiProject\\Services\\YouTubeApiService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAowCEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T02:51:34.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\balck\\source\\repos\\YouTubeApiProject\\YouTubeApiProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "YouTubeApiProject\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\balck\\source\\repos\\YouTubeApiProject\\YouTubeApiProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "YouTubeApiProject\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAswKAAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T04:28:20.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\balck\\source\\repos\\YouTubeApiProject\\YouTubeApiProject\\Views\\Youtube\\Index.cshtml",
+              "RelativeDocumentMoniker": "YouTubeApiProject\\Views\\Youtube\\Index.cshtml",
+              "ToolTip": "C:\\Users\\balck\\source\\repos\\YouTubeApiProject\\YouTubeApiProject\\Views\\Youtube\\Index.cshtml",
+              "RelativeToolTip": "YouTubeApiProject\\Views\\Youtube\\Index.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAuwGIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T02:32:55.088Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
